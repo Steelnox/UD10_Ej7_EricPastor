@@ -6,7 +6,7 @@ namespace UD10_Ej7
     {
         static void Main(string[] args)
         {
-            Raices raiz = new Raices(1, 1, 1);
+            Raices raiz = new Raices(1, 8, 4);
             raiz.calcular();
         }
     }

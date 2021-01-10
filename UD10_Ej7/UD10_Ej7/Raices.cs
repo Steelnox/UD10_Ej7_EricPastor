@@ -22,22 +22,22 @@ namespace UD10_Ej7
 
         public void obtenerRaices()
         {
-            resultado1 = (-b + Math.Sqrt((b ^ 2) - (4 * a * c))) / (2 * a);
-            resultado2 = (-b - Math.Sqrt((b ^ 2) - (4 * a * c))) / (2 * a);
+            resultado1 = (-b + Math.Sqrt(Math.Pow(b, 2) - (4 * a * c))) / (2 * a);
+            resultado2 = (-b - Math.Sqrt(Math.Pow(b, 2) - (4 * a * c))) / (2 * a);
 
             Console.WriteLine("Los dos resultados son {0} y {1}", resultado1, resultado2);
         }
 
         public void obtenerRaiz()
         {
-            resultado1 = (-b + Math.Sqrt((b ^ 2) - (4 * a * c))) / (2 * a);
+            resultado1 = (-b + Math.Sqrt(Math.Pow(b, 2) - (4 * a * c))) / (2 * a);
 
             Console.WriteLine("El resultado es " + resultado1);
         }
 
         public double getDiscriminante()
         {
-            discriminante = (b ^ 2) - 4 * a * c;
+            discriminante = (Math.Pow(b,2)) - 4 * a * c;
             return discriminante;
         }
 
